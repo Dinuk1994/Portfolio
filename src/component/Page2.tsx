@@ -17,14 +17,14 @@ import TypeScript from '../assets/Typescript.png'
  
 const Page2 = () => {
     return (
-        <div className='bg-bg-color-2 shadow-[inset_0_30px_35px_0px_rgba(0,0,0,0.2)]  p-10'>
-            <div className='mt-20 ml-20 '>
+        <div className='bg-bg-color-2 shadow-[inset_0_30px_35px_0px_rgba(0,0,0,0.2)]  p-10 tablet-or-mobile:p-2'>
+            <div className='mt-20 ml-20 tablet-or-mobile:ml-2 tablet-or-mobile:mt-4'>
                 <div className='mb-10'>
-                    <label className='flex text-white text-[50px] font-serif font-semibold  ' htmlFor="">About</label>
+                    <label className='flex text-white text-[50px]  font-semibold  tablet-or-mobile:text-[25px]' htmlFor="">About</label>
                 </div>
-                <div className='text-white text-xl leading-relaxed'>
+                <div className='text-white text-xl tablet-or-mobile:text-xs leading-relaxed'>
                     <p>Meet <strong className='text-font-color'>Dinuk Tharindu Dissanayake</strong>, a go-getter from the charming town of Kandy, Sri Lanka. Armed with:</p>
-                    <ul className='list-disc list-inside ml-5 font-serif font-bold text-font-color'><br />
+                    <ul className='list-disc list-inside ml-5 tablet-or-mobile:ml-1  font-bold tablet-or-mobile:font-medium  text-font-color'><br />
                         <li>🎓 BSc in Quantity Surveying at University of Wolverhampton</li>
                         <li>🎓 Diploma in Software Engineering - Pursuing</li>
                         <li>🎓 MEP Quantity Surveying at ACTA</li>
@@ -47,9 +47,9 @@ const Page2 = () => {
 
                 <div className='mt-10'>
                     <div className='mb-10 '>
-                        <label className='flex justify-center text-white text-[50px] font-serif font-semibold  ' htmlFor="">My Skills</label>
+                        <label className='flex justify-center text-white text-[50px] font-serif font-semibold tablet-or-mobile:text-[25px]' htmlFor="">My Skills</label>
                     </div>
-                    <div className='grid grid-cols-5 gap-y-9'>
+                    <div className='grid grid-cols-5 gap-y-9 tablet-or-mobile:grid-cols-3'>
                         <SkillCard image={Java} name="Java"/>
                         <SkillCard image={JavaScript} name="Java Script"/>
                         <SkillCard image={TypeScript} name="Type Script"/>
