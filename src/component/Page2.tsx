@@ -1,5 +1,20 @@
 import React from 'react';
-
+import SkillCard from './SkillCard';
+import Java from '../assets/java.png'
+import JavaScript from '../assets/javascript.png'
+import SpringBoot from '../assets/Spring-boot.png'
+import Node from '../assets/node-js.png'
+import Express from '../assets/ExpressJs.png'
+import ReactLogo from '../assets/React.png'
+import NextJs from '../assets/NextJs.png'
+import Angular from '../assets/Angular.png'
+import MongoDB from '../assets/MongoDB.png'
+import Sql from '../assets/Sql.png'
+import Html from '../assets/html.png'
+import Css from '../assets/Css.png'
+import Tailwind from '../assets/Tailwind.png'
+import TypeScript from '../assets/Typescript.png'
+ 
 const Page2 = () => {
     return (
         <div className='bg-bg-color-2 shadow-[inset_0_30px_35px_0px_rgba(0,0,0,0.2)]  p-10'>
@@ -33,6 +48,23 @@ const Page2 = () => {
                 <div className='mt-10'>
                     <div className='mb-10 '>
                         <label className='flex justify-center text-white text-[50px] font-serif font-semibold  ' htmlFor="">My Skills</label>
+                    </div>
+                    <div className='grid grid-cols-5 gap-y-9'>
+                        <SkillCard image={Java} name="Java"/>
+                        <SkillCard image={JavaScript} name="Java Script"/>
+                        <SkillCard image={TypeScript} name="Type Script"/>
+                        <SkillCard image={SpringBoot} name="Spring-Boot"/>
+                        <SkillCard image={Node} name="NodeJs"/>
+                        <SkillCard image={Express} name="ExpressJs"/>
+                        <SkillCard image={ReactLogo} name="React"/>
+                        <SkillCard image={NextJs} name="Next Js"/>
+                        <SkillCard image={Angular} name="Angular"/>
+                        <SkillCard image={MongoDB} name="Mongo DB"/>
+                        <SkillCard image={Sql} name="Sql"/>
+                        <SkillCard image={Html} name="Html"/>
+                        <SkillCard image={Css} name="CSS"/>
+                        <SkillCard image={Tailwind} name="Tailwind CSS"/>
+                        
                     </div>
                 </div>
             </div>
