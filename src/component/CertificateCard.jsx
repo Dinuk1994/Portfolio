@@ -1,16 +1,13 @@
 /* eslint-disable react/prop-types */
-import React from 'react'
 
-const CertificateCard = ({image,description}) => {
+const CertificateCard = ({image}) => {
     return (
         <div>
-            <div className='w-[550px] h-[200px] mt-12 tablet-or-mobile:mt-2 tablet-or-mobile:w-[170px] tablet-or-mobile:h-[100px]   text-white bg-bg-color flex justify-center items-center shadow-xl rounded-2xl shadow-gray-800 relative'>
-                <div className='grid w-[550px] h-[300px] tablet-or-mobile:w-[170px] tablet-or-mobile:h-[100px]'>
-                    <img src={image} alt="" className='w-[550px] h-[250px] tablet-or-mobile:w-[170px] tablet-or-mobile:h-[100px] rounded-lg' />                    <label className='flex group-hover:text-black justify-center text-2xl mt-2 tablet-or-mobile:hidden text-font-color font-semibold' htmlFor="">{name}</label>
+            <div className='w-[450px] h-[250px] mt-4  tablet-or-mobile:mt-2 tablet-or-mobile:w-[170px] tablet-or-mobile:h-[100px]   text-white bg-bg-color flex justify-center items-center shadow-xl rounded-2xl shadow-gray-800 relative'>
+                <div className='grid w-[450px] h-[250px] tablet-or-mobile:w-[170px] tablet-or-mobile:h-[100px]'>
+                    <img src={image} alt="" className='w-[450px] h-[250px] tablet-or-mobile:w-[170px] tablet-or-mobile:h-[100px] rounded-lg' />                    <label className='flex group-hover:text-black justify-center text-2xl mt-2 tablet-or-mobile:hidden text-font-color font-semibold' htmlFor="">{name}</label>
                 </div>
-                <div className='absolute tablet-or-mobile:hidden  text-font-color -inset-y-5 w-[550px] h-[200px]  flex justify-center items-center bg-black bg-opacity-75  opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
-                    <p className='text-center'>{description} <br /><span className="text-white">Click to navigate to Github Link</span></p>
-                </div>
+                
             </div>
         </div>
     )
