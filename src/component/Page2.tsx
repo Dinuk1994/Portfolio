@@ -14,10 +14,10 @@ import Html from '../assets/html.png'
 import Css from '../assets/Css.png'
 import Tailwind from '../assets/Tailwind.png'
 import TypeScript from '../assets/Typescript.png'
-
 import Projects from './Projects';
 import Certificates from './Certificates';
 import Expierience from './Expierience';
+import ContactSection from './ContactSection';
 
 const Page2 = () => {
     return (
@@ -82,6 +82,9 @@ const Page2 = () => {
             </div>
             <div className='bg-bg-color shadow-[inset_0_30px_35px_0px_rgba(0,0,0,0.2)]  p-10 tablet-or-mobile:p-2'>
                 <Expierience />
+            </div>
+            <div className='bg-bg-color-2 shadow-[inset_0_30px_35px_0px_rgba(0,0,0,0.2)]  p-10 tablet-or-mobile:p-2'>
+                <ContactSection />
             </div>
         </div>
     );
