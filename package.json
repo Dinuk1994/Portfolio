@@ -1,10 +1,13 @@
 {
+  "homepage": "https://Dinuk1994.github.io/portfolio-web",
   "name": "portfolio-web",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -14,6 +17,7 @@
     "@coreui/react": "^5.3.0",
     "@emailjs/browser": "^4.4.1",
     "aos": "^2.3.4",
+    "gh-pages": "^6.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-hot-toast": "^2.4.1",
