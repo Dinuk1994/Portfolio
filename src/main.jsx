@@ -7,7 +7,5 @@ import './index.css'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
-    <meta name="google-site-verification" content="JfwEhgur-5vGaAlbT-TjczA1gKjb9Fia3pgny_tFHVY" />
-
   </StrictMode>,
 )
