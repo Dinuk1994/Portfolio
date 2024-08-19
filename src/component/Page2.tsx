@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import SkillCard from './SkillCard';
 import Java from '../assets/java.png'
 import JavaScript from '../assets/javascript.png'
@@ -20,12 +20,14 @@ import Expierience from './Expierience';
 import ContactSection from './ContactSection';
 import Footer from './Footer';
 
-const Page2 = () => {
+const Page2 = ({contactRef , certificateRef,projectRef , aboutRef,experienceRef}) => {
+   
+
     return (
         <div>
-            <div className='bg-bg-color-2 shadow-[inset_0_30px_35px_0px_rgba(0,0,0,0.2)]  p-10 tablet-or-mobile:p-2'>
+            <div  className='bg-bg-color-2 shadow-[inset_0_30px_35px_0px_rgba(0,0,0,0.2)]  p-10 tablet-or-mobile:p-2'>
                 <div className='mt-10 ml-20 tablet-or-mobile:ml-2 tablet-or-mobile:mt-4'>
-                    <div className='mb-10 tablet-or-mobile:mb-2'>
+                    <div ref={aboutRef} className='mb-10 tablet-or-mobile:mb-2'>
                         <label className='flex text-white text-[50px]  font-semibold  tablet-or-mobile:text-[25px]' htmlFor="">About</label>
                     </div>
                     <div className='text-white text-xl tablet-or-mobile:text-xs leading-relaxed'>
@@ -55,7 +57,7 @@ const Page2 = () => {
                         <div className=' tablet-or-mobile:mb-4'>
                             <label className='flex justify-center text-white text-[50px] font-serif font-semibold tablet-or-mobile:text-[25px]' htmlFor="">My Skills</label>
                         </div>
-                        <div className='grid grid-cols-5 gap-y-9 tablet-or-mobile:grid-cols-3'>
+                        <div className='grid grid-cols-5 gap-y-9 tablet-or-mobile:grid-cols-3 mt-5'>
                             <SkillCard image={Java} name="Java" />
                             <SkillCard image={JavaScript} name="Java Script" />
                             <SkillCard image={TypeScript} name="Type Script" />
@@ -75,16 +77,16 @@ const Page2 = () => {
                     </div>
                 </div>
             </div>
-            <div className='bg-bg-color shadow-[inset_0_30px_35px_0px_rgba(0,0,0,0.2)]  p-10 tablet-or-mobile:p-2'>
+            <div ref={projectRef} className='bg-bg-color shadow-[inset_0_30px_35px_0px_rgba(0,0,0,0.2)]  p-10 tablet-or-mobile:p-2'>
                 <Projects />
             </div>
-            <div className='bg-bg-color-2 shadow-[inset_0_30px_35px_0px_rgba(0,0,0,0.2)]  p-10 tablet-or-mobile:p-2'>
+            <div ref={certificateRef} className='bg-bg-color-2 shadow-[inset_0_30px_35px_0px_rgba(0,0,0,0.2)]  p-10 tablet-or-mobile:p-2'>
                 <Certificates />
             </div>
-            <div className='bg-bg-color shadow-[inset_0_30px_35px_0px_rgba(0,0,0,0.2)]  p-10 tablet-or-mobile:p-2'>
+            <div ref={experienceRef} className='bg-bg-color shadow-[inset_0_30px_35px_0px_rgba(0,0,0,0.2)]  p-10 tablet-or-mobile:p-2'>
                 <Expierience />
             </div>
-            <div className='bg-bg-color-2 shadow-[inset_0_30px_35px_0px_rgba(0,0,0,0.2)]  p-10 tablet-or-mobile:p-2'>
+            <div ref={contactRef} className='bg-bg-color-2 shadow-[inset_0_30px_35px_0px_rgba(0,0,0,0.2)]  p-10 tablet-or-mobile:p-2'>
                 <ContactSection />
             </div>
             <div className='bg-bg-color shadow-[inset_0_30px_35px_0px_rgba(0,0,0,0.2)]  p-10 tablet-or-mobile:p-2'>
