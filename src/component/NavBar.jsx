@@ -54,17 +54,17 @@ const NavBar = ({ contactRef, certificateRef, projectRef, aboutRef ,experienceRe
           <button onClick={scrollToAbouts} className='text-white hover:text-font-color text-xl '>About</button>
           <button onClick={scrollToProjects} className='text-white hover:text-font-color text-xl '>Projects</button>
           <button onClick={scrollToCertificates} className='text-white hover:text-font-color text-xl'>Certificates</button>
-          <button onClick={scrollToExperience} className='text-white hover:text-font-color text-xl'>Experience</button>
+          <button onClick={scrollToExperience} className='text-white hover:text-font-color text-xl'>Experiences</button>
           <button onClick={scrollToContacts} className='text-white hover:text-font-color text-xl'>Contact</button>
         </div>
       </div>
 
       {isOpen && (
-        <div className='absolute top-0 desktop-or-laptop:hidden right-0 mt-12 mr-3 bg-bg-color  shadow-lg rounded-lg p-4'>
+        <div className='absolute z-50 top-0 desktop-or-laptop:hidden right-0 mt-12 mr-3 bg-bg-color  shadow-lg rounded-lg p-4'>
           <button onClick={scrollToAbouts} className='block text-white hover:text-font-color text-md  mb-2'>About</button>
           <button onClick={scrollToProjects} className='block text-white hover:text-font-color text-md  mb-2'>Projects</button>
           <button onClick={scrollToCertificates} className='block text-white hover:text-font-color text-md mb-2'>Certificated</button>
-          <button onClick={scrollToExperience} className='block text-white hover:text-font-color text-md mb-2'>Experience</button>
+          <button onClick={scrollToExperience} className='block text-white hover:text-font-color text-md mb-2'>Experiences</button>
           <button onClick={scrollToContacts} className='block text-white hover:text-font-color text-md  mb-2'>Contact</button>
         </div>
       )}

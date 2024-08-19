@@ -7,7 +7,7 @@ import Library from '../assets/Library.png'
 
 const Projects = () => {
     return (
-        <div>
+        <div data-aos="fade-up" className='bg-bg-color shadow-[inset_0_30px_35px_0px_rgba(0,0,0,0.2)]  p-10 tablet-or-mobile:p-2'>
             <div className='mt-8 mb-10 tablet-or-mobile:mt-6'>
                 <div className=' tablet-or-mobile:mb-4'>
                     <label className='flex justify-center text-white text-[50px] font-serif tablet-or-mobile:mr-0 font-semibold tablet-or-mobile:text-[25px] ' htmlFor="">Projects</label>

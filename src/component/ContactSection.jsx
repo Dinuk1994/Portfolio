@@ -16,7 +16,7 @@ const ContactSection = () => {
     };
 
     return (
-        <div>
+        <div data-aos="fade-up" className="bg-bg-color shadow-[inset_0_30px_35px_0px_rgba(0,0,0,0.2)]  p-10 tablet-or-mobile:p-2">
             <div className="tablet-or-mobile:mt-7 mb-16">
                 <div className="tablet-or-mobile:mb-4">
                     <label
@@ -43,7 +43,7 @@ const ContactSection = () => {
                     </button>
                     <button className="col-span-1  tablet-or-mobile:mt-4 hover:animate-bounce">
                         <a
-                            href="https://wa.me/94765429917" target="_blank"rel="noopener noreferrer"
+                            href="https://wa.me/94765429917" target="_blank" rel="noopener noreferrer"
                             className="col-span-1 tablet-or-mobile:mt-4 hover:animate-bounce"
                         >
                             <div className="w-96 h-24 tablet-or-mobile:w-72 tablet-or-mobile:h-14 rounded-lg flex justify-center items-center bg-bg-color shadow-2xl shadow-black">
@@ -73,9 +73,8 @@ const ContactSection = () => {
 
 
             {isEmailModalOpen && (
-                <div className="fixed inset-0 tablet-or-mobile:w-screen  flex items-center justify-center z-50">
-                    <div className="bg-black opacity-50 fixed inset-0"></div>
-                    <div className=" bg-bg-color-2 rounded-lg p-8 z-10 ">
+                <div className="fixed inset-0 tablet-or-mobile:w-screen flex  items-center justify-center z-50">
+                    <div className=" bg-bg-color-2 tablet-or-mobile:w-[360px] border-2 border-font-color rounded-lg p-8 tablet-or-mobile:p-2 z-10 ">
                         <EmailComponent closeModal={closeEmailModal} />
                     </div>
                 </div>

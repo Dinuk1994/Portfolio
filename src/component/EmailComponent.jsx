@@ -39,33 +39,31 @@ const EmailComponent = ({ closeModal }) => {
             <Toaster /> 
             <h2 className="text-xl font-semibold mb-4 text-white">
                 Send an Email{" "}
-                <label className="text-font-color justify-center" htmlFor="">
-                    __________________________________________________________
-                </label>
+               
             </h2>
             <form ref={form} onSubmit={sendEmail}>
                 <input
                     type="text"
                     name="user_name"
                     placeholder="Your name"
-                    className="mb-4 bg-gray-600 text-white p-2 border rounded w-full"
+                    className="mb-4 bg-gray-600 text-white p-2 border w-full rounded tablet-or-mobile:w-[340px] "
                     required
                 />
                 <input
                     type="email"
                     name="from_name"
                     placeholder="Your email"
-                    className="mb-4 bg-gray-600 text-white p-2 border rounded w-full"
+                    className="mb-4 bg-gray-600 text-white p-2 border w-full rounded tablet-or-mobile:w-[340px]"
                     required
                 />
                 <textarea
                     name="message"
                     placeholder="Your message"
-                    className="mb-4 p-2 border bg-gray-600 text-white rounded w-full"
+                    className="mb-4 p-2 border bg-gray-600 text-white w-full rounded tablet-or-mobile:w-[340px]"
                     rows="4"
                     required
                 />
-                <div className="flex justify-end">
+                <div className="flex justify-end tablet-or-mobile:w-[340px]">
                     <button
                         type="button"
                         onClick={closeModal}

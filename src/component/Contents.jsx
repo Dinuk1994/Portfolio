@@ -6,8 +6,8 @@ import { TbBrandGithubFilled } from "react-icons/tb";
 import { TbBrandWhatsapp } from "react-icons/tb";
 const Contents = () => {
     return (
-        <div className="grid grid-cols-2 tablet-or-mobile:grid-cols-1 bg-bg-color mt-10 pb-20">
-            <div className="col-span-1 ml-4 pt-40 tablet-or-mobile:pt-5  items-center">
+        <div  className="grid grid-cols-2 tablet-or-mobile:grid-cols-1 bg-bg-color mt-10 pb-20">
+            <div data-aos="fade-right" className="col-span-1 ml-4 pt-40 tablet-or-mobile:pt-5  items-center">
                 <label htmlFor="" className='font-semibold flex justify-center text-4xl text-white tablet-or-mobile:text-3xl'>Hello !</label><br />
                 <label className="flex justify-center tablet-or-mobile:text-[20px] text-white text-[40px] items-center">
                     {"I'm"} <span className="ml-5 text-[70px] text-font-color tablet-or-mobile:text-[35px] font-semibold">Dinuk Tharindu</span>
@@ -34,7 +34,7 @@ const Contents = () => {
 
 
             </div>
-            <div className="col-span-1  flex justify-center mt-5 items-center">
+            <div data-aos="fade-left" className="col-span-1  flex justify-center mt-5 items-center">
                 <div className='grid grid-cols-12'>
                     <div className='col-span-10 mt-8 tablet-or-mobile:mt-3'>
                         <img
