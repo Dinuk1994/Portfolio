@@ -4,7 +4,7 @@ import { FaTwitter } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { TbBrandGithubFilled } from "react-icons/tb";
 import { TbBrandWhatsapp } from "react-icons/tb";
-const Page1 = () => {
+const Contents = () => {
     return (
         <div className="grid grid-cols-2 tablet-or-mobile:grid-cols-1 bg-bg-color mt-10 pb-20">
             <div className="col-span-1 ml-4 pt-40 tablet-or-mobile:pt-5  items-center">
@@ -34,7 +34,7 @@ const Page1 = () => {
 
 
             </div>
-            <div className="col-span-1 flex justify-center mt-5 items-center">
+            <div className="col-span-1  flex justify-center mt-5 items-center">
                 <div className='grid grid-cols-12'>
                     <div className='col-span-10 mt-8 tablet-or-mobile:mt-3'>
                         <img
@@ -77,4 +77,4 @@ const Page1 = () => {
     )
 }
 
-export default Page1
+export default Contents

@@ -25,7 +25,7 @@ const Page2 = ({contactRef , certificateRef,projectRef , aboutRef,experienceRef}
 
     return (
         <div>
-            <div  className='bg-bg-color-2 shadow-[inset_0_30px_35px_0px_rgba(0,0,0,0.2)]  p-10 tablet-or-mobile:p-2'>
+            <div   className='bg-bg-color-2 shadow-[inset_0_30px_35px_0px_rgba(0,0,0,0.2)]  p-10 tablet-or-mobile:p-2'>
                 <div className='mt-10 ml-20 tablet-or-mobile:ml-2 tablet-or-mobile:mt-4'>
                     <div ref={aboutRef} className='mb-10 tablet-or-mobile:mb-2'>
                         <label className='flex text-white text-[50px]  font-semibold  tablet-or-mobile:text-[25px]' htmlFor="">About</label>
@@ -80,7 +80,7 @@ const Page2 = ({contactRef , certificateRef,projectRef , aboutRef,experienceRef}
             <div ref={projectRef} className='bg-bg-color shadow-[inset_0_30px_35px_0px_rgba(0,0,0,0.2)]  p-10 tablet-or-mobile:p-2'>
                 <Projects />
             </div>
-            <div ref={certificateRef} className='bg-bg-color-2 shadow-[inset_0_30px_35px_0px_rgba(0,0,0,0.2)]  p-10 tablet-or-mobile:p-2'>
+            <div data-aos="fade-right" ref={certificateRef} className='bg-bg-color-2 shadow-[inset_0_30px_35px_0px_rgba(0,0,0,0.2)]  p-10 tablet-or-mobile:p-2'>
                 <Certificates />
             </div>
             <div ref={experienceRef} className='bg-bg-color shadow-[inset_0_30px_35px_0px_rgba(0,0,0,0.2)]  p-10 tablet-or-mobile:p-2'>
