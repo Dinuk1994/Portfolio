@@ -17,7 +17,7 @@ const ContactSection = () => {
 
     return (
         <div>
-            <div className="tablet-or-mobile:mt-7 mb-10">
+            <div className="tablet-or-mobile:mt-7 mb-16">
                 <div className="tablet-or-mobile:mb-4">
                     <label
                         className="flex justify-center tablet-or-mobile:mr-0 text-white text-[50px] font-serif font-semibold tablet-or-mobile:text-[25px]"
@@ -26,7 +26,7 @@ const ContactSection = () => {
                         Contact Me
                     </label>
                 </div>
-                <div className="grid  grid-cols-3 tablet-or-mobile:mt-3  mt-10 tablet-or-mobile:grid-cols-1 tablet-or-mobile:justify-items-center">
+                <div className="grid  justify-items-center  grid-cols-3 tablet-or-mobile:mt-3  mt-10 tablet-or-mobile:grid-cols-1 tablet-or-mobile:justify-items-center">
                     <button
                         onClick={openEmailModal}
                         className="col-span-1 hover:animate-bounce"
@@ -43,9 +43,7 @@ const ContactSection = () => {
                     </button>
                     <button className="col-span-1  tablet-or-mobile:mt-4 hover:animate-bounce">
                         <a
-                            href="https://wa.me/94765429917" // Your full phone number with country code
-                            target="_blank"
-                            rel="noopener noreferrer"
+                            href="https://wa.me/94765429917" target="_blank"rel="noopener noreferrer"
                             className="col-span-1 tablet-or-mobile:mt-4 hover:animate-bounce"
                         >
                             <div className="w-96 h-24 tablet-or-mobile:w-72 tablet-or-mobile:h-14 rounded-lg flex justify-center items-center bg-bg-color shadow-2xl shadow-black">

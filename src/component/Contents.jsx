@@ -36,11 +36,22 @@ const Page1 = () => {
                             <div className='bg-font-color h-[100px] rounded-full w-1 ml-2  mr-8 mt-[5px]'></div>
                         </div>
                         <div className='grid mr-5 tablet-or-mobile:mt-5'>
-                            <CgFacebook className='bg-white tablet-or-mobile:size-5 rounded-full size-8 mt-5 hover:animate-bounce hover:text-blue-600 ml-3 ' />
-                            <FaTwitter className=' text-white  tablet-or-mobile:size-5  size-8 mt-5 hover:animate-bounce hover:text-blue-500 ml-3 ' />
-                            <FaLinkedinIn className=' text-white   tablet-or-mobile:size-5  rounded-md hover:bg-blue-500  size-8 mt-5 hover:animate-bounce  ml-3 ' />
-                            <TbBrandGithubFilled className=' text-white  tablet-or-mobile:size-5  hover:text-black rounded-full hover:bg-white  size-8 mt-5 hover:animate-bounce  ml-3 ' />
-                            <TbBrandWhatsapp className=' text-white  tablet-or-mobile:size-5  hover:text-green-600 rounded-full hover:bg-white  size-8 mt-5 hover:animate-bounce  ml-3 ' />
+                            <a href='https://web.facebook.com/profile.php?id=100006024227651' target="_blank" rel="noopener noreferrer">
+                                <CgFacebook className='bg-white tablet-or-mobile:size-5 rounded-full size-8 mt-5 hover:animate-bounce hover:text-blue-600 ml-3' />
+                            </a>
+                            <a href="https://x.com/DinukD" target='_blank' rel='noopener noreferrer'>
+                                <FaTwitter className=' text-white  tablet-or-mobile:size-5  size-8 mt-5 hover:animate-bounce hover:text-blue-500 ml-3 ' />
+                            </a>
+                            <a href="https://www.linkedin.com/in/dinuk-dissanayake-3a0ba7270/" target='_blank' rel='noopener noreferrer'>
+                                <FaLinkedinIn className=' text-white   tablet-or-mobile:size-5  rounded-md hover:bg-blue-500  size-8 mt-5 hover:animate-bounce  ml-3 ' />
+                            </a>
+                            <a href="https://github.com/Dinuk1994" target='_blank' rel='noopener noreferrer'>
+                                <TbBrandGithubFilled className=' text-white  tablet-or-mobile:size-5  hover:text-black rounded-full hover:bg-white  size-8 mt-5 hover:animate-bounce  ml-3 ' />
+                            </a>
+                            <a href="https://wa.me/94765429917" target='_blank' rel='noopener noreferrer'>
+                                <TbBrandWhatsapp className=' text-white  tablet-or-mobile:size-5  hover:text-green-600 rounded-full hover:bg-white  size-8 mt-5 hover:animate-bounce  ml-3 ' />
+                            </a>
+
                         </div>
                         <div className='flex tablet-or-mobile:hidden'>
                             <div className='bg-font-color h-[100px] rounded-full w-1 ml-[20px] mt-[10px]'></div>

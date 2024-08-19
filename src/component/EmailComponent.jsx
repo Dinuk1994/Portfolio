@@ -11,18 +11,18 @@ const EmailComponent = ({ closeModal }) => {
 
         emailjs
             .sendForm(
-                'service_gnmgpdp', // Replace with your service ID
-                'template_7gavvwk', // Replace with your template ID
+                'service_gnmgpdp', 
+                'template_7gavvwk', 
                 form.current,
-                'xx0g4NLwxgh_hy8TF' // Replace with your public key
+                'xx0g4NLwxgh_hy8TF' 
             )
             .then(
                 () => {
                     console.log('SUCCESS!');
-                    closeModal(); // Close the email modal first
+                    closeModal(); 
                     toast.success('Your email has been sent successfully!', {
                         position: 'top-right',
-                        duration: 1500, // Toast will be visible for 1.5 seconds
+                        duration: 3000, 
                     });
                 },
                 (error) => {
@@ -36,7 +36,7 @@ const EmailComponent = ({ closeModal }) => {
 
     return (
         <div>
-            <Toaster /> {/* This renders the toast notifications */}
+            <Toaster /> 
             <h2 className="text-xl font-semibold mb-4 text-white">
                 Send an Email{" "}
                 <label className="text-font-color justify-center" htmlFor="">

@@ -84,10 +84,10 @@ const Experience = () => {
                             <div className="flex tablet-or-mobile:hidden justify-center mt-3 ml-8">
                                 <div className="bg-font-color rounded-full h-4 w-4 blur-[3px]"></div>
                             </div>
-                            <div className="flex justify-center">
+                            <div className="flex justify-center mb-5">
                                 <div className="col-span-1 flex justify-center bg-font-color w-2 tablet-or-mobile:w-1 rounded"></div>
                             </div>
-                            <div className="col-span-9 text-white w-[750px] tablet-or-mobile:w-[280px] mr-[80px] tablet-or-mobile:mr-[3px]">
+                            <div className="col-span-9 mb-5 text-white w-[750px] tablet-or-mobile:w-[280px] mr-[80px] tablet-or-mobile:mr-[3px]">
                                 <label className="text-3xl tablet-or-mobile:text-lg text-nowrap" htmlFor="">Assistant Quantity Surveyor</label><br />
                                 <label className="text-xl tablet-or-mobile:text-sm" htmlFor="">Mahaweli Authority</label>
                                 <p className="mt-5 tablet-or-mobile:text-sm">

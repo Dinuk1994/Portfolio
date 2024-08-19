@@ -18,12 +18,13 @@ import Projects from './Projects';
 import Certificates from './Certificates';
 import Expierience from './Expierience';
 import ContactSection from './ContactSection';
+import Footer from './Footer';
 
 const Page2 = () => {
     return (
         <div>
             <div className='bg-bg-color-2 shadow-[inset_0_30px_35px_0px_rgba(0,0,0,0.2)]  p-10 tablet-or-mobile:p-2'>
-                <div className='mt-20 ml-20 tablet-or-mobile:ml-2 tablet-or-mobile:mt-4'>
+                <div className='mt-10 ml-20 tablet-or-mobile:ml-2 tablet-or-mobile:mt-4'>
                     <div className='mb-10 tablet-or-mobile:mb-2'>
                         <label className='flex text-white text-[50px]  font-semibold  tablet-or-mobile:text-[25px]' htmlFor="">About</label>
                     </div>
@@ -85,6 +86,9 @@ const Page2 = () => {
             </div>
             <div className='bg-bg-color-2 shadow-[inset_0_30px_35px_0px_rgba(0,0,0,0.2)]  p-10 tablet-or-mobile:p-2'>
                 <ContactSection />
+            </div>
+            <div className='bg-bg-color shadow-[inset_0_30px_35px_0px_rgba(0,0,0,0.2)]  p-10 tablet-or-mobile:p-2'>
+                <Footer />
             </div>
         </div>
     );
