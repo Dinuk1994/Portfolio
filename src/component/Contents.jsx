@@ -38,17 +38,17 @@ const Contents = () => {
                 <div className='grid grid-cols-12'>
                     <div className='col-span-10 mt-8 tablet-or-mobile:mt-3'>
                         <img
-                            className='size-[450px] tablet-or-mobile:size-[250px] tablet-or-mobile:border-[5px] tablet-or-mobile:ml-12 tablet-or-mobile:flex tablet-or-mobile:justify-center tablet-or-mobile:mr-0 mr-8 border-[10px] rounded-full animate-border-color-cycle'
+                            className='size-[450px] tablet-or-mobile:size-[250px] tablet-or-mobile:border-[5px] tablet-or-mobile:ml-12 tablet-or-mobile:flex tablet-or-mobile:justify-center tablet-or-mobile:mr-0 mr-8  border-[6px] rounded-full animate-border-color-cycle'
                             src={Photo}
                             alt="Description of image"
                         />
                     </div>
-                    <div className='col-span-2   '>
+                    <div className='col-span-2  animate-moveUpDown '>
                         <div className='flex tablet-or-mobile:hidden'>
                             <div className='bg-font-color h-[100px]  rounded-full w-1 ml-[20px] mt-[5px]'></div>
                             <div className='bg-font-color h-[100px] rounded-full w-1 ml-2  mr-8 mt-[5px]'></div>
                         </div>
-                        <div className='grid mr-5 tablet-or-mobile:mt-5'>
+                        <div className='grid mr-5 mt-6 tablet-or-mobile:mt-8'>
                             <a href='https://web.facebook.com/profile.php?id=100006024227651' target="_blank" rel="noopener noreferrer">
                                 <CgFacebook className='bg-white tablet-or-mobile:size-5 rounded-full size-8 mt-5 hover:animate-bounce hover:text-blue-600 ml-3' />
                             </a>

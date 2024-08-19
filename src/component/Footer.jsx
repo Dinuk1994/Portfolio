@@ -4,6 +4,7 @@ import { FaTwitter } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { TbBrandGithubFilled } from "react-icons/tb";
 import { TbBrandWhatsapp } from "react-icons/tb";
+import { FaAngleDoubleUp } from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -14,7 +15,7 @@ const Footer = () => {
                     <div className="bg-white rounded-lg  w-full mt-1 h-1"></div>
                 </div>
                 <div className="col-span-1 tablet-or-mobile:flex tablet-or-mobile:justify-center tablet-or-mobile:mt-6">
-                    <label className="text-font-color tablet-or-mobile:text-2xl text-5xl font-semibold" htmlFor="">Appreciate Your Time!</label>
+                    <label className="text-font-color tablet-or-mobile:text-2xl justify-center flex text-4xl font-semibold" htmlFor="">Appreciate Your Time!</label>
                 </div>
                 <div className="col-span-1 mt-6 justify-items-center ml-8 tablet-or-mobile:ml-0  0">
                     <div className="bg-white rounded-lg  w-full h-1"></div>
@@ -39,6 +40,9 @@ const Footer = () => {
                     <TbBrandWhatsapp className=' text-white  tablet-or-mobile:size-5  hover:text-green-600 rounded-full hover:bg-white  size-8 mt-5 hover:animate-bounce  ml-3 ' />
                 </a>
 
+            </div>
+            <div className='flex justify-center mt-4'>
+                <button><FaAngleDoubleUp onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className='text-5xl animate-moveUpDown tablet-or-mobile:text-3xl font-serif text-font-color font-semibold'></FaAngleDoubleUp></button>
             </div>
             <p className='text-center mt-14 text-white text-sm font-serif font-semibold mb-4'>Copyright © 2024. All rights reserved.</p>
         </div>

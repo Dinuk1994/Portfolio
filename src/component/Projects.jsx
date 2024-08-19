@@ -13,7 +13,7 @@ const Projects = () => {
                     <label className='flex justify-center text-white text-[50px] font-serif tablet-or-mobile:mr-0 font-semibold tablet-or-mobile:text-[25px] ' htmlFor="">Projects</label>
                 </div>
 
-                <div className='flex justify-center mt-8'>
+                <div className='flex justify-center mt-10'>
                     <div className='flex justify-center '>
                         <div className='grid w-full grid-cols-2 gap-x-10  tablet-or-mobile:gap-x-3   gap-y-12 tablet-or-mobile:gap-y-3 tablet-or-mobile:grid-cols-2'>
                             <ProjectCard media={Facebook} link="https://github.com/Dinuk1994/Facebook-login" description="Created a Facebook login page clone using React framework." />

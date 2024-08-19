@@ -8,7 +8,7 @@ export default {
     extend: {
       colors: {
         'bg-color': '#34353A',
-        'bg-color-2' : '#31333B',
+        'bg-color-2': '#31333B',
         'font-color': '#FFC86B',
         'coral': '#FF6F61',
         'navy-Blue': '#003366',
@@ -37,6 +37,7 @@ export default {
         'typing-sequence': 'typing-sequence 5s infinite',
         'typing-sequence-delay': 'typing-sequence-delay 5s infinite',
         'border-color-cycle': 'border-color-cycle 5s infinite',
+        moveUpDown: 'moveUpDown 2s infinite',
       },
       keyframes: {
         'typing-sequence': {
@@ -50,16 +51,22 @@ export default {
           '100%': { opacity: 0 },
         },
         'border-color-cycle': {
-          '10%': { borderColor: '#D3D3D3' }, 
-          '25%': { borderColor: '#AFEEEE' }, 
-          '40%': { borderColor: '#FFC1CC' }, 
-          '55%': { borderColor: '#98FF98' }, 
-          '65%': { borderColor: '#32CD32' }, 
-          '85%': { borderColor: '#E6E6FA' }, 
-          '100%': { borderColor: '#E0FFFF' }, 
+          '10%': { borderColor: '#D3D3D3' },
+          '25%': { borderColor: '#AFEEEE' },
+          '40%': { borderColor: '#FFC1CC' },
+          '55%': { borderColor: '#98FF98' },
+          '65%': { borderColor: '#32CD32' },
+          '85%': { borderColor: '#E6E6FA' },
+          '100%': { borderColor: '#E0FFFF' },
+        },
+        moveUpDown: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
         },
       },
+
     },
+
   },
   plugins: [],
 }
